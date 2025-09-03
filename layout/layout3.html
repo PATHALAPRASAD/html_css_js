@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Webpage Layout</title>
+    <style>
+      /* Basic CSS Reset */
+      body,
+      h1,
+      h2,
+      p,
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Use a simple and readable font */
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+        /* Flexbox for sticky footer */
+        display: flex;
+        flex-direction: column;
+        /* min-height: 100vh; */
+      }
+
+      /* Main container for the layout */
+      .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Header Styling */
+      header {
+        background-color: #0056b3;
+        color: #fff;
+        padding: 2rem 0;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      /* Main Content Styling */
+      main {
+        padding: 20px 0;
+        min-height: 600px;
+        /* min-height: 100%; */
+        /* Allow main content to take up remaining space */
+        flex: 1;
+      }
+
+      .card {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Footer Styling */
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 0.9rem;
+      }
+
+      footer p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Awesome Website</h1>
+    </header>
+
+    <div class="container">
+      <main>
+        <div class="card">
+          <h2>About This Page</h2>
+          <p>
+            This is the main content area of the webpage. Here you can place
+            your articles, images, and other relevant information. This section
+            is designed to hold the primary content that users will interact
+            with.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Section Two</h2>
+          <p>
+            You can add multiple sections within the main content area to
+            structure your information logically. Each card provides a clean,
+            self-contained block for your content.
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
